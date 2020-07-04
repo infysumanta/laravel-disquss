@@ -1,0 +1,41 @@
+{
+  "name": "sumantablog/laravel-disqus",
+  "description": "A Package for intrigate dosquss in laravel",
+  "keywords": [
+    "sumanta",
+    "comments",
+    "disqus",
+    "laravel"
+  ],
+  "homepage": "https://github.com/sumantablog/laravel-disqus",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com",
+    "homepage": "http://sumantakabiraj.com",
+    "role": "Developer"
+  }],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "*",
+    "illuminate/filesystem": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Disqus\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Disqus\\DisqusServiceProvider"
+      ]
+    }
+  }
+}
